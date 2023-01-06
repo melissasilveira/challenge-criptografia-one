@@ -4,8 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #e5e5e5;
 }
 
 button,
@@ -14,4 +16,155 @@ a {
   text-decoration: none;
   opacity: 1;
   transition: 0.3s;
+}
+
+/* Styles */
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 120px;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 200px;
+}
+
+.text-encrypt {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  width: 680px;
+  height: 400px;
+  border: none;
+  color: #0a3871;
+  background-color: #e5e5e5;
+}
+
+textarea::placeholder {
+  color: #0a3871;
+}
+
+.warning-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+img.warning {
+  width: 18px;
+}
+
+p.warning {
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 16px;
+  gap: 24px;
+}
+
+.encrypt {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  background: #0a3871;
+  border: none;
+  border-radius: 24px;
+  color: #d8dfe8;
+}
+
+.decrypt {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+}
+
+.text-result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 900px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  margin: 20px;
+}
+
+div.no-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+img.no-text {
+  width: 336px;
+  height: 304px;
+}
+
+.warning-no-text {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  gap: 16px;
+}
+
+h3.no-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
+
+p.no-text {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+
+#encrypted-text-area {
+  display: none;
 }
