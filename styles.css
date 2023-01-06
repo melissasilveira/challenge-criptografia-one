@@ -1,0 +1,17 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s;
+}
