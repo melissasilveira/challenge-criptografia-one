@@ -9,19 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js"></script>
     <title>Decodificador</title>
   </head>
   <body>
     <main>
+      <header class="logo-area">
+        <img class="logo" src="Frame 6@3x.png" alt="Logo da alura" />
+      </header>
       <div class="body">
         <div class="main-area">
-          <div class="logo-area">
-            <img class="logo" src="Frame 6@3x.png" alt="Logo da alura" />
-          </div>
           <div class="text-section">
             <textarea
               class="text-encrypt"
+              id="plain-text"
               name="text-encrypt"
               placeholder="Digite seu texto"
             ></textarea>
@@ -34,10 +34,18 @@
               <p class="warning">Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="button-section">
-              <button type="button" class="encrypt" id="encrypt">
+              <button
+                class="encrypt"
+                id="encrypt-button"
+                onclick="btnEncrypt()"
+              >
                 Criptografar
               </button>
-              <button type="button" class="decrypt" id="decrypt">
+              <button
+                class="decrypt"
+                id="decrypt-button"
+                onclick="btnDecrypt()"
+              >
                 Descriptografar
               </button>
             </div>
@@ -58,7 +66,7 @@
             </div>
           </div>
           <div id="encrypted-text-area">
-            <p id="encrypted-text"></p>
+            <input type="text" id="encrypted-text"></input>
             <button class="copy-button" id="copy-button" type="button">
               Copiar
             </button>
@@ -67,5 +75,6 @@
       </div>
     </main>
     <footer>Desenvolvido por Melissa Silveira - 2023</footer>
+    <script src="main.js"></script>
   </body>
 </html>
