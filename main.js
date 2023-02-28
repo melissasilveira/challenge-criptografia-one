@@ -69,3 +69,11 @@ function decrypt(decryptedString) {
 
   return decryptedString
 }
+
+// implementa botão de copiar o texto para área de transferência
+document.getElementById('copy-button').addEventListener('click', clipboardCopy)
+async function clipboardCopy() {
+  let text = document.querySelector('#encrypted-text').value
+  await navigator.clipboard.writeText(text)
+  alert('Texto copiado para a área de transferência.')
+}
